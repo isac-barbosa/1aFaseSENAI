@@ -28,9 +28,9 @@ alert(`Esta temperatura é ${farenheit} graus farenheit`)
 }
 function exercicio4(){
     let num = Number(prompt("Digite um numero"))
-    if(num % 2 == 0)[
+    if(num % 2 == 0){
         alert("Número par")
-    ]
+    }
     else{
         alert("Número ímpar")
     }
@@ -45,5 +45,87 @@ function exercicio5(){
 function exercicio6(){
     let peso = prompt("Digite seu peso")
     let altura = prompt("Digite sua altura")
-    imc = peso / altura
+    calculo = altura^2
+    imc = peso / calculo
+    alert(`O seu imc é de: ` + imc)
+}
+function exercicio8(){
+    let ano = Number(prompt("Insira um ano"))
+    if(ano % 4 == 0 || ano % 400 == 0){
+        alert("Ano bissexto")
+    }
+    else{
+        alert("Não é ano bissexto")
+    }
+}
+function exercicio1Lista2(){
+}
+function exercicio3Lista2(){
+    let min = 1
+    let max = 4
+    let frase1 = "Brabox"
+    let frase2 = "Pika de cachorro"
+    let frase3 = "Galatico"
+    //Math.cell()-> Arredonda pra cima
+    //Math.floor()-> Aredonda pra baixo
+    //Math.round()-> Arredonda pro mais proximo
+    let numero = Math.floor(Math.random() * (max - min) + min)
+    let nome = prompt("Digite seu nome para ganhar um apelido")
+    if(numero == 1){
+        alert(nome + frase1)
+    }
+    else if(numero == 2){
+        alert(nome + frase2)
+    }
+    else if(numero == 3){
+        alert(nome + frase3)
+    }
+}
+function exercicio4Lista2(){
+    let signo = prompt("Digite seu signo: ")
+    if(signo == "leão"){
+        alert("Hoje é um ótimo dia para buscar novos desafios, Leão!")
+    } 
+    if(signo == "aries"){
+        alert("Não espere acontecer faça acontecer impulso é seu sobrenome, Áries!")
+    }
+    else if(signo == "capricornio"){
+        alert("Enquanto uns sonham com sucesso trabalhe por ele, Capricórnio!")
+    }
+    else{
+        alert("Hoje não é seu dia")
+    }
+}
+function exercicio10Lista2(){
+    let soma
+    let escolha = (prompt("Escolha par ou ímpar"))
+    let num = Number(prompt("Digite um numero de 0 a 10"))
+    let numero = Math.random() * 100
+    let formula = Math.floor(Math.random() * (100 - 0) + 0)
+    soma = num + formula
+    alert("A soma deles é "+ soma)
+    if(escolha == "par" && soma % 2 == 0){
+        alert("Parabens voce ganhou")
+    }
+    else if(escolha == "ímpar" && soma % 2 !== 0){
+        alert("Parabens voce ganhou")
+    }
+    else{
+        alert("Voce perdeu")
+    }
+}
+function exercicio14Lista2(){
+
+}
+function exercicio15Lista2(){
+    let max = 100
+    let min = 1
+    let numeroaleatorio = Math.floor(Math.random() * (max - min) + min)
+    let numero = Number(prompt("Tente adivihar o numero sorteado de (1 a 100)"))
+    if(numeroaleatorio == numero){
+        alert("Parabéns voce acertou")
+    }
+    else if( numeroaleatorio != numero){
+        alert("Tente novamente")
+    }
 }
