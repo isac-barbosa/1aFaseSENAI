@@ -114,8 +114,12 @@ function exercicio10Lista2(){
         alert("Voce perdeu")
     }
 }
+let contador = 0
 function exercicio14Lista2(){
-
+    contador++
+}
+function continuaçãoExercicioLista2(){
+    alert("Voce clicou " + contador + "vezes")
 }
 function exercicio15Lista2(){
     let max = 100
@@ -127,5 +131,88 @@ function exercicio15Lista2(){
     }
     else if( numeroaleatorio != numero){
         alert("Tente novamente")
+    }
+}
+function gerarcaracter(){
+    const caracteres = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`
+    let numeroaleatorio = Math.floor(Math.random() * caracteres.length)
+    return caracteres.charAt(numeroaleatorio)
+}
+function gerarsenha(){
+let quantidade = Number(prompt("Informe quantos caracteres sua senha deve ter"))
+    if(quantidade ==1){
+    alert("Senha: "
+        +gerarcaracter())
+    }else if(quantidade == 2){
+        alert("Senha: "
+            +gerarcaracter()
+            +gerarcaracter())
+    }else if (quantidade == 3){
+        alert("Senha: "
+            +gerarcaracter()
+            +gerarcaracter()
+            +gerarcaracter())
+    }else if (quantidade == 4){
+        alert("Senha: "
+            +gerarcaracter()
+            +gerarcaracter()
+            +gerarcaracter()
+            +gerarcaracter())
+}
+}
+function exercicio20Lista2(){
+}
+function exercicio22Lista2(){
+    let resposta1 = prompt(`Quantos anos tem o Planeta Terra?
+                          (a) 13,8 bilhões de anos
+                          (b) 14,5 bilhões de anos
+                          (c) 15 bilhões de anos`)
+    let resposta2 = prompt(`Qual o maior osso do corpo humano?
+                            (a) rádio
+                            (b) calcâneo
+                            (c) fêmur `)
+    let resposta3 = prompt(`Qual o animal que carrega a casa nas costas
+                            (a) tartaruga
+                            (b) caracol
+                            (c) tatu`)
+    if(resposta1 == "a" && resposta2 == "c" && resposta3 == "b"){
+        alert("Parabéns voce acertou 3/3")
+    }
+    else if(resposta1 != "a" && resposta2 == "c" && resposta3 == "b" || resposta1 == "a" && resposta2 !="c" && resposta3 == "b" || resposta1 == "a" && resposta2 == "c" && resposta3 != "b"){
+        alert("Voce acertou 2/3")
+    }
+    else if(resposta1 != "a" && resposta2 != "c" && resposta3 == "b" || resposta1 != "a" && resposta2 =="c" && resposta3 != "b" || resposta1 == "a" && resposta2 != "c" && resposta3 != "b"){
+        alert("Voce acertou 1/3")
+    }
+}
+function exercicio30Lista2(){
+    let frase1 = "Acredite em si mesmo!"
+    let frase2 = "Não desista supere!"
+    let frase3 = "A persistência leva ao sucesso"
+    let numero = Math.floor(Math.random() * (4 - 1) + 1)
+    if( numero == 1){
+        alert(frase1)
+    }
+    else if(numero == 2){
+        alert(frase2)
+    }
+    else if (numero == 3){
+        alert(frase3)
+    }
+}
+function exercicio32Lista2(){
+    let opcao1 = "sim"
+    let opcao2 = "não"
+    let opcao3 = "talvez"
+    let pergunta = prompt("Faça perguntas de (sim) e (não)")
+    let numero = Math.floor(Math.random() * (4 - 1) + 1)
+    if( numero == 1){
+        alert(opcao1)
+    }
+    else if(numero == 2){
+        alert(opcao2)
+    }
+    else if (numero == 3){
+        alert(frase3)
     }
 }
