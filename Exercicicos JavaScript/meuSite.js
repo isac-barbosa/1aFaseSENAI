@@ -139,6 +139,7 @@ function gerarcaracter(){
     return caracteres.charAt(numeroaleatorio)
 }
 function gerarsenha(){
+    //Sem estrutura de repetição
 let quantidade = Number(prompt("Informe quantos caracteres sua senha deve ter"))
     if(quantidade ==1){
     alert("Senha: "
@@ -158,31 +159,48 @@ let quantidade = Number(prompt("Informe quantos caracteres sua senha deve ter"))
             +gerarcaracter()
             +gerarcaracter()
             +gerarcaracter())
+    }else if (quantidade == 5){
+        alert("Senha: "
+            +gerarcaracter()
+            +gerarcaracter()
+            +gerarcaracter()
+             +gerarcaracter()
+             +gerarcaracter())
+    }else if (quantidade == 6){
+        alert("Senha: "
+            +gerarcaracter()
+            +gerarcaracter()
+            +gerarcaracter()
+            +gerarcaracter()
+            +gerarcaracter()
+            +gerarcaracter())
+}   else if(quantidade > 6){
+    alert("Senha indisponivel")
 }
 }
 function exercicio20Lista2(){
 }
 function exercicio22Lista2(){
-    let resposta1 = prompt(`Quantos anos tem o Planeta Terra?
+    let resposta1 = prompt(`Quantos anos tem o Planeta Terra
                           (a) 13,8 bilhões de anos
                           (b) 14,5 bilhões de anos
                           (c) 15 bilhões de anos`)
-    let resposta2 = prompt(`Qual o maior osso do corpo humano?
-                            (a) rádio
-                            (b) calcâneo
-                            (c) fêmur `)
+    let resposta2 = prompt(`Qual o maior osso do corpo humano
+                          (a) rádio
+                          (b) calcâneo
+                          (c) fêmur `)
     let resposta3 = prompt(`Qual o animal que carrega a casa nas costas
-                            (a) tartaruga
-                            (b) caracol
-                            (c) tatu`)
+                          (a) tartaruga
+                          (b) caracol
+                          (c) tatu`)
     if(resposta1 == "a" && resposta2 == "c" && resposta3 == "b"){
-        alert("Parabéns voce acertou 3/3")
+        alert("Parabéns você acertou 3/3")
     }
     else if(resposta1 != "a" && resposta2 == "c" && resposta3 == "b" || resposta1 == "a" && resposta2 !="c" && resposta3 == "b" || resposta1 == "a" && resposta2 == "c" && resposta3 != "b"){
-        alert("Voce acertou 2/3")
+        alert("Você acertou 2/3")
     }
     else if(resposta1 != "a" && resposta2 != "c" && resposta3 == "b" || resposta1 != "a" && resposta2 =="c" && resposta3 != "b" || resposta1 == "a" && resposta2 != "c" && resposta3 != "b"){
-        alert("Voce acertou 1/3")
+        alert("Você acertou 1/3")
     }
 }
 function exercicio30Lista2(){
@@ -204,7 +222,7 @@ function exercicio32Lista2(){
     let opcao1 = "sim"
     let opcao2 = "não"
     let opcao3 = "talvez"
-    let pergunta = prompt("Faça perguntas de (sim) e (não)")
+    let = prompt("Faça perguntas de (sim) e (não)")
     let numero = Math.floor(Math.random() * (4 - 1) + 1)
     if( numero == 1){
         alert(opcao1)
@@ -213,6 +231,78 @@ function exercicio32Lista2(){
         alert(opcao2)
     }
     else if (numero == 3){
-        alert(frase3)
+        alert(opcao3)
+    }
+}
+function mostrarnumerospares(){
+    let contador = 2
+    while(contador <= 20){
+        alert("Contador igual a "+ contador)
+        contador += 2
+
+    }
+}
+function mostrarnumerosimpares(){
+    let contador = 1
+    while(contador <= 20){
+        alert("Contador igual a "+ contador)
+        contador += 2
+
+    }
+
+}
+function olamundo(){
+    let contador = 1
+    while(contador <= 5){
+        alert("Ola mundo")
+        contador++            
+    }   
+}
+function contarde5em5(){
+    let contador = 0
+    while(contador <= 50){
+        alert("Contador igual a "+ contador)
+        contador += 5
+
+    }
+}
+function diminuirde10em10(){
+    let contador = 100
+    while(contador >= 0){
+        alert("Contador igual a "+ contador)
+        contador -= 10
+    }
+}
+function mostrarmultiplosde3(){
+    let contador = 3
+    while(contador % 3 == 0 && contador <= 30){
+        alert("Contador igual a "+ contador)
+        contador += 3
+    }
+    
+}
+function mostrarnumerosaoquadrado(){
+    let contador = 0
+    while (contador <= 10){
+        alert("Número " + contador + "\n" + "Número elevado ao quadrado: " + contador **2)
+        contador++
+    }
+
+}
+function mostrarnumerosaocubo(){
+    let contador = 0
+    while (contador <= 10){
+        alert("Número " + contador + "\n" + "Número elevado ao cubo: " + contador **3)
+        contador++
+    }
+
+}
+function contarde1a15mostrandopar(){
+    let contador = 1
+    while(contador <=15){
+        if(contador % 2 == 0){
+        alert("Número " + contador + `\n` + "par")
+        }else (alert("Número " + contador + `\n` + "ímpar"))
+        contador++
     }
 }
