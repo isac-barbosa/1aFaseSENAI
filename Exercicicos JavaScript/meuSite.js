@@ -301,8 +301,100 @@ function contarde1a15mostrandopar(){
     let contador = 1
     while(contador <=15){
         if(contador % 2 == 0){
-        alert("Número " + contador + `\n` + "par")
-        }else (alert("Número " + contador + `\n` + "ímpar"))
+        alert("Número " + contador + " par")
+        }else (alert("Número " + contador + " ímpar"))
         contador++
     }
 }
+function imprimirdivisiveispor4(){
+    let contador = 1
+    while(contador <=100){
+        let resultado
+        resultado = contador % 4
+        if(resultado == 0){
+            alert("O número " + contador + " é divisivel por 4")
+            }
+        contador++
+    }
+}
+function loop(){
+    let contador = 1
+    while(contador <= 10){
+        alert("Contador igual a "+ contador)
+        contador ++
+    }
+}
+function contaate20efrasemultiplosde3(){
+    let contador = 0
+    while(contador <= 20){
+        if(contador % 3 == 0)
+        alert(contador + " FIZZ")
+        else{
+            alert(contador)
+        }
+        contador ++
+
+    }
+}
+function contaate20efrasemultiplosde5(){
+    let contador = 0
+    while(contador <= 20){
+        if(contador % 5 == 0)
+        alert(contador + " BUZZ")
+        else{
+            alert(contador)
+        }
+        contador ++
+    }
+}
+function somadosnumerosde1a10(){
+    let contador = 1
+    let soma = 0
+
+    while(contador <= 10){
+        soma =  soma + contador
+        alert("Contador: " + contador + " soma: " +soma)
+
+        contador++
+   }
+   alert(soma)
+
+}
+function calcularmultiplicaçãode1a5(){
+    let contador = 1
+    let soma = 1
+
+    while(contador <= 5){
+        soma =  soma * contador
+        alert("Contador: " + contador + " resultado: " +soma)
+
+        contador++
+
+    }
+}
+function numerosparesde1a50(){
+    let contador = 1
+    while(contador <= 10){
+        let soma
+        soma = contador % 2 
+        if(soma == 0)
+        alert("Os numeros pares são " + soma)
+        contador ++ 
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
