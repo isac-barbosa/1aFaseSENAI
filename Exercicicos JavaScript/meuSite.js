@@ -358,7 +358,6 @@ function somadosnumerosde1a10(){
         contador++
    }
    alert(soma)
-
 }
 function calcularmultiplicaçãode1a5(){
     let contador = 1
@@ -369,22 +368,58 @@ function calcularmultiplicaçãode1a5(){
         alert("Contador: " + contador + " resultado: " +soma)
 
         contador++
-
     }
 }
 function numerosparesde1a50(){
     let contador = 1
-    while(contador <= 10){
-        let soma
-        soma = contador % 2 
-        if(soma == 0)
-        alert("Os numeros pares são " + soma)
-        contador ++ 
+    let soma = 1
+    while(contador <= 50){ 
+        alert("Os numeros: " + contador + " existem: " + soma + " numeros pares")
+        if(contador % 2 == 0){
+            soma++
+        
+        }
+        contador ++   
     }
-    
 }
+function multiplosde6ate100(){
+let soma6 = 0
+let contador = 1
+    while(contador <= 100){ 
+        alert("contagem: " + contador + " multiplos de 6: "  + soma6)
+        if(contador % 6 == 0 ){
+        soma6++
+        }
+        contador++
+    }
+}
+function contarpulandoosmultiplosde4(){
+let contador = 1
+    while(contador <= 30){
+        if(contador % 4 != 0){ 
+        alert(contador)
+        }
+        else{
 
+        }
+        contador++
+    }
+}
+function somarde1a100sempassarde400(){
+let contador = 1
+let soma = 0
+    while(contador <= 100 && soma <= 400){
+        console.log(contador)
+        soma = soma + contador
+        alert(`contador: ` + contador + ` soma: ` + soma)
 
+        contador++
+    }
+    alert("Soma: " + soma)
+}
+function simularumasenha(){
+
+}
 
 
 
