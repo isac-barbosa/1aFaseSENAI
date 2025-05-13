@@ -508,6 +508,7 @@ function somarnumerosimpares(){
         }
         contador += 2
     }
+    alert(soma)
 }
 function contarmultiplosde9entre1e100(){
     let contador = 1
@@ -526,4 +527,17 @@ function contarde50a0osquenãosãomultiplosde5(){
         }
         contador -=1
     }
+}
+function somadosnumerosparesate100(){
+    let contador = 1
+    let soma = 0
+        while(contador <= 100){
+            if(contador % 2 == 0){
+               soma = soma + contador 
+               alert(`contagem: ` + contador + ` soma: ` + soma)
+            }
+            contador ++
+        }
+        alert(soma)
+
 }
