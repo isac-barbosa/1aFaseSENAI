@@ -418,18 +418,112 @@ let soma = 0
     alert("Soma: " + soma)
 }
 function simularumasenha(){
-
 }
 
 
 
+function contarate50(){
+    let contador = 1
+    while(contador <=30){
+        alert(contador)
+        contador++
+    } 
+}
+function exibirmensagemno50(){
+    let contador = 1
+        while(contador <= 100){
+            if(contador == 50){
+                alert("De seu 100% mesmo não estando 100%")
+            }else{
+                alert(contador)
+            }
+            contador++
+        }
+}
+function contarate10(){
+    let contador = 10
+    while(contador >= 0){
+        alert(contador)
+        contador -= 1
+    }
+    alert("LANÇAMENTO") 
+}
+function contarate30exibindomensagem(){
 
 
-
-
-
-
-
-
-
-
+    let contador = 1
+        while(contador <= 30){
+            if(contador % 7 == 0){
+                alert("Pulando")
+            }else{
+                alert(contador)
+            } 
+            contador++
+        }
+}
+function contarde1a20commensagem(){
+    let contador = 1
+        while(contador <= 20){
+            if(contador % 2 == 0 || contador % 3 == 0){
+                alert("ESPECIAL")
+            }else{
+                alert(contador)
+            }
+            contador++
+        }
+}
+function dizerseémenorque5(){
+    let contador = 1
+    while( contador <= 10){
+        if(contador < 5){
+            alert(contador + ` menor que 5`)
+        }else if(contador == 5){
+            alert(contador + ` igual a 5`)
+        } if(contador > 5){
+            alert(contador + ` maior que 5`)
+        }
+        contador++
+    }
+}
+function fazerumloopatenumeroaleatorio(){
+}
+function mostrardivisoresdo24(){
+    let contador = 1
+        while(contador <= 50){
+            if(contador % 5 == 0){
+                alert(contador + ` é divisivel por 5`)
+            }else{
+                alert(contador)
+            }
+            contador++
+        }
+}
+function somarnumerosimpares(){
+    let contador = 1
+    let soma = 0
+    while(contador <=20){
+        if(contador % 2 != 0){
+            soma = soma + contador
+            alert(`contagem: `+ contador + ` soma: `+ soma)
+        }
+        contador += 2
+    }
+}
+function contarmultiplosde9entre1e100(){
+    let contador = 1
+        while(contador <= 100){
+            if(contador % 9 == 0){
+                alert(contador + ` é multiplo de 9`)
+        }
+        contador++
+    }
+}
+function contarde50a0osquenãosãomultiplosde5(){
+    let contador = 50
+    while(contador >= 0){
+        if(contador % 5 !== 0 ){
+            alert(contador)
+        }
+        contador -=1
+    }
+}
