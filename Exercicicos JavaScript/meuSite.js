@@ -539,5 +539,150 @@ function somadosnumerosparesate100(){
             contador ++
         }
         alert(soma)
+}
+function funcionamentodosemaforo(){
 
+}
+function simularcargadabateria(){
+    let contador = 0
+    while(contador <= 100){
+        alert(`Seu celular esta em ` + contador + `%`)
+        contador += 10
+    }
+}
+function simulardescargadabateria(){
+    let contador = 100
+    while(contador >= 0){
+        alert(`Sua bateria esta em ` + contador + `%`)
+        contador -= 10
+    }
+}
+function setivercarteiraeformaior(){
+    let idade = Number(prompt("Qual a sua idade? "))
+    let temcarteira = prompt("Tem carteira de motorista? ")
+    if(idade >=18 && temcarteira == `sim` || temcarteira == `Sim`){
+        alert("Você pode dirigir")
+    }else{
+        alert("Você não pode dirigir")
+    }    
+}
+function verificarseonumeroépar(){
+    let numerodigitado = Number(prompt("Digite um numero: "))
+        if(numerodigitado > 0 && numerodigitado % 2 == 0){
+            alert(numerodigitado + " é positivo e par" )
+        }else if (numerodigitado > 0 && numerodigitado % 2 !== 0){
+            alert(numerodigitado + ` é positivo mas não é par`)
+        }
+
+}
+function solicitarsenha(){
+    let usuario = prompt("Digite seu nome de usuario")
+    let solicitarsenha = prompt("Digite sua senha ")
+        if(usuario == "admin" && solicitarsenha == "1234"){
+            alert("Acesso permitido!")
+        }else{
+            alert("Acesso negado!")
+        }
+}
+function pedirdoisnumeroseexibirseévalido(){
+    let num1 = Number(prompt("Digite o primeiro numero pra mim validar seu codigo"))
+    let num2 = Number(prompt("Digite o segundo numero pra mim validar seu codigo"))
+        if(num1 > 0 && num2 < 0){
+            alert("Valores válidos")
+        }else if (num1 < 0 && num2 > 0){
+            alert("Valores válidos")
+        }else{
+            alert("Valores invalidos")
+        }
+}
+function senotaformaiorque6emenorque10(){
+    let nota = Number(prompt("Digite uma nota"))
+        if(nota > 6 && nota <= 10 ){
+            alert("Aprovado!")
+        }else{
+            alert("Reprovado!")
+        }
+}
+function numeroinvalidosenãoforentre1e100(){
+    let numero = Number(prompt("Digite um número"))
+    if(numero >= 1 && numero <=100){
+        alert("Numero válido")
+    }else(
+        alert("Numero invalido")
+    )
+}
+function pediridadeeseéestudante(){
+    let estudante = prompt("Você é estudante? ")
+    let idade = Number(prompt("Qual a sua idade?"))
+    if(estudante == "sim" || idade <= 18){
+        alert("Meia entrada")
+    }
+}
+function perguntarseaceitouostermoseseconfirmouoemail(){
+    let termos = prompt("Você aceitou os termos? ")
+    let email = prompt("Voce confirmou o email? ")
+        if(termos == "sim" && email == "sim"){
+            alert("Cadastro completo")
+        }else{
+            alert("Você não completou o cadastro!")
+        }
+}
+function pediralturaepeso(){
+    let altura = prompt("Qual a sua altura? ")
+    let peso = Number(prompt("Quanto você pesa? "))
+        if (altura >= 1.60 && peso >= 50 && peso <= 90){
+            alert("Apto para o esporte")
+        }else{
+            alert("Você ainda não esta apto para o esporte")
+        }
+}
+function verificarseapessoaémaiordeidadeounãoaceitaostermos(){
+    let idade = Number(prompt("Qual a sua idade? "))
+    let termos = prompt("Você aceitou os termos?")
+        if(idade > 18 || termos == "sim"){
+            alert("Acesso permitido!")
+        }else{
+            alert("Acesso negado!")
+        }
+}
+function pedirsenha(){
+    let contador = 1
+    let senha = prompt("Digite sua senha")
+        while(senha != "abc123" && contador <= 3){
+            alert("Digite novamente sua senha!")
+
+            contador++
+        }
+}
+function perguntaraidade(){
+    let contador = 1
+    let idade = Number(prompt("Qual a sua idade?"))
+    let termos = prompt("Você aceita os termos?")
+        while(idade < 18  && termos != "sim"){
+            prompt("Qual a sua idade?")
+            prompt("Você aceitou os termos? ")
+            contador++
+        }
+}
+function solicitarnumeroateambosserempares(){
+    let num1 = Number(prompt("Digite um número"))
+    let num2 = Number(prompt("Digite outro número"))
+        while(num1 % 2 !== 0 || num2 % 2 !== 0){
+            prompt("Digite um número")
+            prompt("Digite outro número")
+
+            if (num1 % 2 == 0 && num2 % 2 == 0){
+                alert("Os números são pares")
+            }
+        }
+}
+function pedirletraateacertar(){
+    let contador = 1
+    let letrasorteada = prompt("Digite uma letra")
+    if(letrasorteada != "a"){
+        while(contador){
+            prompt("Digite uma letra")
+        }
+    }
+    contador++
 }
