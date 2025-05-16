@@ -646,22 +646,24 @@ function verificarseapessoaémaiordeidadeounãoaceitaostermos(){
         }
 }
 function pedirsenha(){
-    let contador = 1
+    let contador =1
     let senha = prompt("Digite sua senha")
-        while(senha != "abc123" && contador <= 3){
-            alert("Digite novamente sua senha!")
-
-            contador++
+        while(senha !== "abc123" && contador <= 3){
+          senha= prompt("Digite novamente sua senha!")
+        }if(senha == "abc123"){
+            alert("Usuario logado!")
         }
 }
+
 function perguntaraidade(){
-    let contador = 1
     let idade = Number(prompt("Qual a sua idade?"))
     let termos = prompt("Você aceita os termos?")
-        while(idade < 18  && termos != "sim"){
-            prompt("Qual a sua idade?")
-            prompt("Você aceitou os termos? ")
-            contador++
+        while(idade < 18  && termos !== "sim"){
+           idade = Number(prompt("Qual a sua idade?"))
+            termos = prompt("Você aceitou os termos? ")
+        }if(idade >= 18 && termos == "sim"){
+            alert("Parabéns você completou o passo a passo")
+
         }
 }
 function solicitarnumeroateambosserempares(){
