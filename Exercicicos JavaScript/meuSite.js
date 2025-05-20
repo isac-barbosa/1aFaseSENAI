@@ -670,10 +670,10 @@ function solicitarnumeroateambosserempares(){
     let num1 = Number(prompt("Digite um número"))
     let num2 = Number(prompt("Digite outro número"))
         while(num1 % 2 !== 0 || num2 % 2 !== 0){
-            prompt("Digite um número")
-            prompt("Digite outro número")
+            Number(prompt("Digite um número"))
+            Number(prompt("Digite outro número"))
 
-            if (num1 % 2 == 0 && num2 % 2 == 0){
+            if(num1 % 2 == 0 && num2 % 2 == 0){
                 alert("Os números são pares")
             }
         }
@@ -687,4 +687,66 @@ function pedirletraateacertar(){
         }
     }
     contador++
+}
+function numerosde1a100pares(){
+    for(let contador = 1; contador <= 100; contador++)
+        if(contador % 2 == 0 || contador % 3 == 0){
+            alert(contador)
+        }
+}
+function numerosde1a50impares(){
+    for(contador =1; contador <=50; contador++)
+        if(contador % 2 !== 0 || contador % 7 == 0){
+            alert(contador)
+        }
+}
+function numerosentre1e30(){
+    for(contador = 0; contador <= 30; contador++)
+        if(contador % 2 !== 0 && contador % 3 !== 0){
+            alert(contador)
+        }
+}
+function exibirapenasentre10e20ou90e100(){
+    for(contador = 1; contador <= 100; contador++)
+        if(contador >= 10 && contador <= 20 || contador >= 90 && contador <= 100){
+            alert(contador)
+        }
+}
+function numerode0a20multiplosde4enãomultiplosde8(){
+    for(contador = 0; contador <= 20;contador++)
+        if(contador % 4 == 0 && contador % 8 !== 0){
+            alert(contador)
+        }
+}
+function mostrarseforentre30ou40edivisivelpor10(){
+    for(contador = 1; contador <= 50; contador++)
+        if(contador >= 30 && contador <= 40 || contador % 10 == 0){
+            alert(contador)
+        }
+}
+function numerosparesoudivisiveispor5de1a20(){
+    for(contador = 1; contador <= 20; contador++)
+        if(contador % 2 == 0 || contador % 5 == 0){
+            alert(contador)
+        }
+}
+function numerosde0a100quesejammultiplosde6enãomultiplosde9(){
+    for(contador = 0; contador <= 100; contador++)
+        if(contador % 6 == 0 && contador % 9 !== 0){
+            alert(contador)
+        }
+}
+function numerosde1a50menorque10oumaiorque40(){
+    for(contador = 1; contador <= 50; contador++)
+        if(contador <= 10 || contador >= 40){
+            alert(contador)
+        }
+}
+function numerosde1a30seformultiplode3mensagem(){
+    for(contador = 1; contador <= 30; contador++)
+        if(contador % 3 == 0 && contador >= 10 && contador <=25 ){
+            alert(contador + " Especial")
+        }else{
+            alert(contador)
+        }
 }
