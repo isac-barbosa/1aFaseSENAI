@@ -119,7 +119,7 @@ function exercicio14Lista2(){
     contador++
 }
 function continuaçãoExercicioLista2(){
-    alert("Voce clicou " + contador + "vezes")
+    alert("Voce clicou " + contador + " vezes")
 }
 function exercicio15Lista2(){
     let max = 100
