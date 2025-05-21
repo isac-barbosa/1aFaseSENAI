@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bem vindo ao cadastro de usuario</h1>
+    <div>
+        <h6>Por favor preencha as informações abaixo</h6>
+        <hr>
+        <label for="name">Digite seu nome: </label>
+        <input type="text" id="name">
+        <hr>
+        <label for="age"> Digite sua idade: </label>
+        <input type="number" id="age">
+        <br>
+        <button onclick="cadastrar()">cadastrar</button>
+    </div>
+    <hr>
+    <div>
+        <h6 id = "resultado"></h6>
+    </div>
+    <br>
+    <h2>Vamos calcular suas notas! 😁</h2>    
+        <div>
+        <h3>Pediremos para que você preencha suas notas no campo abaixo ⬇</h3>
+        <br><label for="nota1">Digite a primeira nota:</label>
+        <input type="number" id="nota1">
+        <br><label for="nota2">Digite sua segunda nota:</label>
+        <input type="number" id="nota2">
+        <br><label for="nota3">Digite sua terceira nota:</label>
+        <input type="number" id="nota3">
+        <br><label for="nota4">Digite sua ultima nota</label>
+        <input type="number" id="nota4">
+        <br><br><button onclick="calcularnotas()">Calculo de notas</button>
+        <hr>
+        <h3 id="resultadomedia"></h3>
+        <h3>Calcularemos as proximas 4 notas com seus respectivos pesos ⬇</h3>
+        <br><label for="prova1">Digite a primeira nota:</label>
+        <input type="number" id="prova1">
+        <br><label for="peso1">Coloque seu respectivo peso:</label>
+        <input type="number" id="peso1">
+        <br><label for="prova2">Digite a segunda nota:</label>
+        <input type="number" id="prova2">
+        <br><label for="peso2">Coloque seu respectivo peso:</label>
+        <input type="number" id="peso2">
+        <br><label for="prova3">Digite a terceira nota:</label>
+        <input type="number" id="prova3">
+        <br><label for="peso3">Coloque seu respectivo peso:</label>
+        <input type="number" id="peso3">
+        <br><label for="prova4">Digite sua última nota:</label>
+        <input type="number" id="prova4">
+        <br><label for="peso4">Coloque seu respectivo peso:</label>
+        <input type="number" id="peso4">
+        <br><br>
+        <button onclick="calcularnotaepeso()">Calculo de notas</button>
+        <hr>
+        <h3 id="mediaresultado"></h3>
+    </div>
+    <h2>Calcule o seu IMC 😜</h2>
+    <div>
+        <br><label for="nome">Coloque seu nome:</label>
+        <input type="text" id="nome">
+        <br><label for="idade">Digite sua idade:</label>
+        <input type="number" id="idade">
+        <br><label for="sexo">Qual seu sexo:</label>
+        <input type="text" id="sexo">
+        <br><label for="peso">Quando você pesa?</label>
+        <input type="text" id="peso">
+        <br><label for="altura">Qual sua altura em metros: </label>
+        <input type="number" id="altura">
+
+    </div>
+    <script src="Exercicios usando Dom.js"></script>
+
+</body>
+</html>
