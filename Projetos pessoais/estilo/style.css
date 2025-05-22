@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px; /*margem ou  espaço externo (entre a borda do elemento e outros elementos).*/
+    padding: 0px; /*  espaço interno (entre conteúdo e borda)*/
+
+}
+html, body{
+    min-height: 100vh; /* A sigla VH significa a view port */
+    background-color:   rgb(255, 255, 255);
+
+}
+   
+header{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center; /*Posição onde o texto vai ficar*/
+}
+header > h1{
+    padding-top: 50px;
+
+    /*Para usar letra do cabeçalho maiuscula temos 2 opções:
+    text-transform: uppercase 
+    E também a font-variant: small-caps; */
+
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+
+}
+a {
+    color: white;
+    text-decoration: none; /*Usado para decorar o texto mas deixamos como none 
+                            para tirar do sublinhado*/
+
+    font-weight: bolder; /*usado para deixar em negrito*/
+}
+a:hover{
+    text-decoration:underline; /*coloquei para que quando passe o mouse encima, fique sublinhado*/
+
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*Para fazer um espaçamento duplo entre as frases*/
+    padding-left: 29px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: grey;
+    color: white;
+}
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.212);
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center; /*usado para deixar o texto alinhado no meio da pagina*/
+    padding: 10px;
+}
