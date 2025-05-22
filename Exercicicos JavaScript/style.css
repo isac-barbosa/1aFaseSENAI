@@ -271,3 +271,28 @@ svg:hover .tooltip {
     right: 0;
   }
 }
+section.principal{
+  text-align: center;
+  line-height: 2rem;
+  padding-top: 20px;
+  
+}
+section > h3{
+   font-variant:small-caps;
+  
+}
+section.textocompleto{
+  padding-left: 20px;
+  line-height: 1rem;
+  padding-bottom: 20px;
+}
+a{
+  color: white;
+  text-decoration:underline;
+}
+footer{
+  text-align: center;
+  color: white;
+  margin: 40px;
+  font-variant:small-caps;
+}
