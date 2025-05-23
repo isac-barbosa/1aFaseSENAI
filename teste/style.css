@@ -1,0 +1,58 @@
+#login{
+    
+color: rgb(0, 0, 0);
+display: flex;
+flex-direction: column; /*Usado pra deixar os elementos em vertical*/
+justify-content: center; /**/
+align-items: center;/*Alinhar os itens no centro*/
+gap: 20px;
+/* border: 2px solid #001372; */
+border-radius: 10px;
+padding: 10px;
+margin: 10px;
+width: 300px;
+min-height: 400px;
+box-shadow: 10px 0px 20px rgb(0, 0, 0); /*Usado para criar sombra*/
+
+
+}
+#cadastro{
+    display: flex; /*Usando display pra fazer o efeito de quando eu clicar no botão do login, sumir o cadastro da tela e vice versa*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-height: 400px;
+    box-shadow: 10px 0px 20px black;
+    
+}
+.containerInput{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+input{
+    border-radius: 5px;
+    height: 20px;
+}
+button{
+    background-color: blue;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+button:hover{ /*Usado pra quando passar o mouse encima do botão ele fazer efeito*/
+    background-color: rgb(255, 0, 0);
+    scale: 1.5; /*Usado pra aumentar o tamanho*/
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

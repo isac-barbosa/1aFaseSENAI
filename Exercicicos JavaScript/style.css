@@ -272,7 +272,7 @@ svg:hover .tooltip {
   }
 }
 section.principal{
-  text-align: center;
+  text-align:  center;
   line-height: 2rem;
   padding-top: 20px;
   
@@ -285,6 +285,7 @@ section.textocompleto{
   padding-left: 20px;
   line-height: 1rem;
   padding-bottom: 20px;
+  text-align: center;
 }
 a{
   color: white;
