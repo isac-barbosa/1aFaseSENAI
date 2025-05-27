@@ -1,0 +1,36 @@
+body{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+header{
+    background-color: blue;
+}
+h2, h3{
+    font-variant: small-caps;
+}
+
+html,body{
+    min-height: 100vh;
+    text-align: center;
+}
+button{
+    background-color: grey;
+    text-align: center;
+    border-radius: 5px;
+
+    
+}
+button a{
+    
+    text-decoration:none;    
+    color: rgb(0, 0, 0);
+
+
+    
+}
+button:hover{
+background-color: white;
+scale: 1.5;
+
+}
