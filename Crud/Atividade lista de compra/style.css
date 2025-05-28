@@ -1,0 +1,77 @@
+
+
+.containerprincipal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.titulo{
+    display:flex;
+    gap: 10px; /*feito pra afastar o botão do titulo*/
+    width:100%;
+    justify-content: center; /*feito pra alinhar no horizontal*/
+    align-items: center;
+}
+.botaocadastro{
+    background-color: green;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.botaocadastro:hover{
+    scale: 1.5;
+}
+.lista{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+ol{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.editar{
+    cursor: pointer;
+}
+.deletar{
+    cursor: pointer;
+}
+.voltar{
+    background-color: red;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.voltar:hover{
+    scale: 1.5;
+}
+.conteudocadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.containercadastro{
+    display:none;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+h1{
+    font-variant: small-caps;
+    
+}
+.adicionaritem{
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.adicionaritem:hover{
+    scale: 1.5;
+}

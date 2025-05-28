@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('sr5zabd0b2aaadaws3.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerprincipal" id="containerprincipal">
+        <div class="titulo">
+            <h1>Lista de compras do Zac</h1>
+            <button class="botaocadastro" onclick="chamarCadastro()">➕</button>
+        </div>
+        <div class="lista">
+            <ol id="minhalista">
+
+
+            </ol>
+        </div>
+    </div>
+
+    <div class="containercadastro" id="containercadastro">
+        <div class="titulo">
+            <h1>Cadastrar item </h1>
+            <button onclick="voltarInicio()" class="voltar">voltar ⬅</button>
+        </div>
+        <div class="conteudocadastro">
+            <label for="nome"> Nome do item </label>
+            <input type="text" name="nome" id="nome">
+            <button  class=" adicionaritem" onclick="adicionarItem()">Cadastrar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
