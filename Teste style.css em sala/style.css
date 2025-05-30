@@ -7,22 +7,21 @@ h1{
 #login{
 color: rgb(0, 0, 0);
 display: flex;
-flex-direction: column; /*Usado pra deixar os elementos em vertical*/
-justify-content: center; /**/
+flex-direction: column; /*Usado pra deixar os elementos em coluna*/
+justify-content: center; /*Vai alinhar os elementos por exemplo flex end vai alinhar no final*/
 align-items: center;/*Alinhar os itens no centro*/
 gap: 20px;
-/* border: 2px solid #001372; */
 border-radius: 10px;
 padding: 10px;
 margin: 10px;
 width: 300px;
-min-height: 400px;
-box-shadow: 10px 0px 20px rgb(0, 0, 0); /*Usado para criar sombra*/
+min-height: 350px;
+box-shadow: 0px 0px 10px rgb(0, 0, 0); /*Usado para criar sombra*/
 font-family: "Playpen Sans Deva", cursive;
 
 }
 #cadastro{
-    display: flex; /*Usando display pra fazer o efeito de quando eu clicar no botão do login, sumir o cadastro da tela e vice versa*/
+    display: none; /*Usando display pra fazer o efeito de quando eu clicar no botão do login, sumir o cadastro da tela e vice versa*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -32,13 +31,16 @@ font-family: "Playpen Sans Deva", cursive;
     margin: 10px;
     width: 300px;
     min-height: 400px;
-    box-shadow: 10px 0px 20px black;
-    
+    box-shadow: 0px 0px 10px black;
+    font-family: "Playpen Sans Deva", cursive;
+}
+#produtos{
+    display: none;
 }
 .containerInput{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 input{
     border-radius: 5px;
@@ -50,15 +52,26 @@ button{
     border-radius: 5px;
     border: none;
     padding: 10px;
+    cursor: pointer;
+
 
 }
 button:hover{ /*Usado pra quando passar o mouse encima do botão ele fazer efeito*/
     background-color: gray;
-    scale: 1.5; /*Usado pra aumentar o tamanho*/
+    scale: 1.2; /*Usado pra aumentar o tamanho*/
+
+
 }
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+footer{
+    margin: 10px;
+    padding: 10px;
+    background-color: blue;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }

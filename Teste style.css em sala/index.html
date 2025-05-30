@@ -10,41 +10,42 @@
     <nav>
         <button onclick="mostrarlogin()">Login</button>
         <button onclick="mostrarCadastro()">Cadastro</button>
+        <button onclick="mostrarProdutos()">Produtos</button>
     </nav>
-    <h1>BOKARRA</h1>
-    <div id="login">
-        <h3> <li>Se prepare pra uma experiência 
-            incrível na melhor casa noturna de Florianópolis
-        </li>
-        </h3>
+    <h1>Teste login/cadastro</h1>
+    <section id="login">
         <h2>Login</h2>
         <div class="containerInput">
-
             <label for="">Nome</label>
-            <input type="text">
+            <input type="text" id="inpLogNome">
         </div>
         <div class="containerInput">
             <label for="">Senha</label>
-            <input type="password">
+            <input type="password" id="inpLogSenha">
         </div>
-        <button><a href="https://github.com/isac-barbosa" target="_blank">Logar</a></button> 
-    </div>
-    <div id="cadastro">
+        <button onclick="logar()">Logar</button> 
+    </section>
+    <section id="cadastro">
         <h2>Cadastro</h2>
         <div class="containerInput">
-            <label for="">Telefone</label>
-            <input type="number">
+            <label for="">Nome</label>
+            <input type="text" id="inpCadNome">
         </div>
         <div class="containerInput">
             <label for="">Email</label>
-            <input type="text">
+            <input type="text" id="inpCadEmail">
         </div>
         <div class="containerInput">
             <label for="">Senha</label>
-            <input type="password">
+            <input type="password" id="inpCadSenha">
         </div>
+        <button onclick="cadastrar()">Cadastrar</button>
+    </section>
+    <section id="produtos">
+        <h2>Produtos</h2>
 
-    </div>
+    </section>
     <script src="script.js"></script>
+    <footer>Site criado por Isac Barbosa</footer>
 </body>
 </html>
