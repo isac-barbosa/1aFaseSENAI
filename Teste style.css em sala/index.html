@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,52 @@
     <title>Telas</title>
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <button onclick="mostrarlogin()">Login</button>
         <button onclick="mostrarCadastro()">Cadastro</button>
         <button onclick="mostrarProdutos()">Produtos</button>
     </nav>
-    <h1>Teste login/cadastro</h1>
-    <section id="login">
-        <h2>Login</h2>
-        <div class="containerInput">
-            <label for="">Nome</label>
-            <input type="text" id="inpLogNome">
-        </div>
-        <div class="containerInput">
-            <label for="">Senha</label>
-            <input type="password" id="inpLogSenha">
-        </div>
-        <button onclick="logar()">Logar</button> 
-    </section>
-    <section id="cadastro">
-        <h2>Cadastro</h2>
-        <div class="containerInput">
-            <label for="">Nome</label>
-            <input type="text" id="inpCadNome">
-        </div>
-        <div class="containerInput">
-            <label for="">Email</label>
-            <input type="text" id="inpCadEmail">
-        </div>
-        <div class="containerInput">
-            <label for="">Senha</label>
-            <input type="password" id="inpCadSenha">
-        </div>
-        <button onclick="cadastrar()">Cadastrar</button>
-    </section>
-    <section id="produtos">
-        <h2>Produtos</h2>
+    <!-- <h1>Teste login/cadastro</h1> -->
+     <main>
 
+         <section id="login">
+             <h1>Login</h1>
+             <div class="containerInput">
+                 <label for="">Nome</label>
+                 <input type="text" id="inpLogNome">
+                </div>
+                <div class="containerInput">
+                    <label for="">Senha</label>
+                    <input type="password" id="inpLogSenha">
+                </div>
+                <button onclick="mostrarCadastro()" class="bt-secundario">Não tem cadastro?</button>
+                <button onclick="logar()">Logar</button> 
+            </section>
+            <section id="cadastro">
+                <h1>Cadastro</h1>
+                <div class="containerInput">
+                    <label for="">Nome</label>
+                    <input type="text" id="inpCadNome">
+                </div>
+                <div class="containerInput">
+                    <label for="">Email</label>
+                    <input type="text" id="inpCadEmail">
+                </div>
+                <div class="containerInput">
+                    <label for="">Senha</label>
+                    <input type="password" id="inpCadSenha">
+                </div>
+                <button onclick="mostrarlogin()" class="bt-secundario">Já tenho cadastro...</button>
+                <button onclick="cadastrar()">Cadastrar</button>
+            </section>
+            <section id="produtos">
+        <h1>Produtos</h1>
+        
     </section>
+</main>
     <script src="script.js"></script>
-    <footer>Site criado por Isac Barbosa</footer>
+    <footer>
+        Site criado por <a href="https://github.com/isac-barbosa" target="_blank">Isac Barbosa</a>
+    </footer>
 </body>
 </html>
