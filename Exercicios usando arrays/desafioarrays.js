@@ -1,5 +1,17 @@
+
+const numeros = [5, 12, 8, 130, 44, 7, 3, 19, 22];
+const nomes = ["Ana", "Carlos", "Beatriz", "Daniel", "Eduarda", "Bruno"];
+const produtos = [
+ { nome: "Camiseta", preco: 29.9, categoria: "Roupas" },
+ { nome: "Notebook", preco: 2500, categoria: "Eletrônicos" },
+ { nome: "Mouse", preco: 59.9, categoria: "Eletrônicos" },
+ { nome: "Meias", preco: 9.9, categoria: "Roupas" },
+ { nome: "Teclado", preco: 120, categoria: "Eletrônicos" }
+]
+
+//NUMEROS
+
 //1
-let numeros = [5, 12, 8, 130, 44, 7, 3, 19, 22];
 let numerosFiltrados = numeros.filter((numero) => numero > 10);
 console.log(numerosFiltrados);
  
@@ -37,3 +49,40 @@ let numeroMaiorQue100 = numeros.some(elemento => elemento > 100)
 console.log(numeroMaiorQue100)
 
 //10
+function calcularMedia(array){
+    let soma = array.reduce((acumulador, atual) => acumulador += atual ,0)
+    console.log( soma)
+    return soma/array.length
+}
+console.log(calcularMedia(numeros))
+
+
+//NOMES 
+
+//1
+nomes.sort()
+console.log(nomes)
+
+//2
+let nomesFiltrados = nomes.filter( (elemento) => elemento.length > 5)
+console.log(nomesFiltrados)
+
+//3
+let nomesMinusculo = nomes.map(palavra => {
+    let [primeira, ...restante] = palavra
+    let novaletra = primeira.toLowerCase()
+    return novaletra + restante.join('') 
+})
+console.log(nomesMinusculo)
+
+//4
+
+
+//5
+console.log(nomes[4])
+
+
+//6
+let quantidadeLetras = nomes[1].length
+let soma =length+nomes[1].length + nomes[2].length + nomes[3].length + nomes[4].length + nomes[5].length 
+console.log(quantidadeLetras)
