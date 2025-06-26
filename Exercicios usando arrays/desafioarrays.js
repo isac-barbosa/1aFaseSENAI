@@ -93,4 +93,21 @@ console.log(nomes.join(', '))
 
 //PRODUTOS
 //1
+let produtosEletronicos = produtos.filter(produto => produto.categoria === "Eletrônicos");
+console.log(produtosEletronicos)
+
+
+//2
+let nomesProduto = produtos.map(elemento => elemento.nome)
+console.log(nomesProduto)
+
+//3
+let produtosDesconto = produtos.map((elemento) => elemento.preco)
+console.log(produtosDesconto)
+let porcentagem = 10
+calculo = 
+console.log(calculo)
+
+//4
+
 
