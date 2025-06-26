@@ -83,6 +83,14 @@ console.log(nomes[4])
 
 
 //6
-let quantidadeLetras = nomes[1].length
-let soma =length+nomes[1].length + nomes[2].length + nomes[3].length + nomes[4].length + nomes[5].length 
-console.log(quantidadeLetras)
+// let quantidadeLetras = nomes[1].length
+let somaLetras =nomes[0].length+nomes[1].length + nomes[2].length + nomes[3].length + nomes[4].length + nomes[5].length 
+console.log(somaLetras)
+
+//7
+console.log(nomes.join(', '))
+
+
+//PRODUTOS
+//1
+
