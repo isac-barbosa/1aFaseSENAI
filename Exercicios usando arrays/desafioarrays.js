@@ -79,7 +79,8 @@ console.log(nomesMinusculo)
 
 
 //5
-console.log(nomes[4])
+let Daniel = nomes
+console.log(nomes.indexOf('Daniel'))
 
 
 //6
@@ -102,12 +103,47 @@ let nomesProduto = produtos.map(elemento => elemento.nome)
 console.log(nomesProduto)
 
 //3
-let produtosDesconto = produtos.map((elemento) => elemento.preco)
+let produtosDesconto = produtos.map(produtos => {
+    return{
+        nome:produtos.nome, 
+        produtosDesconto: produtos.preco * 0.9
+    }
+})
 console.log(produtosDesconto)
-let porcentagem = 10
-calculo = 
-console.log(calculo)
 
 //4
 
+total = (produtos[0].preco) + (produtos[1].preco) + (produtos[2].preco) + (produtos[3].preco)+ (produtos[4].preco)
+console.log(total)
+//5
+let maiorValor = Math.max(...produtos.map(p => p.preco))
+console.log(maiorValor)
 
+
+//6
+
+let valoresProdutos = produtos.map((elemento) => elemento.preco)
+let numCresc = valoresProdutos.sort((a,b)=> a-b)
+console.log(numCresc)
+
+
+//7
+
+//8
+function buscarCategoria(Roupas){
+    return produtos.filter(produtos => produtos.categoria === Roupas)
+}
+console.log(buscarCategoria)
+
+//10
+let valores = (produtos.map( elementos => elementos.preco))
+maiorque5 = valores.every(elemento => elemento > 5)
+console.log(maiorque5)
+
+
+
+//Bonus
+
+//4
+let tudoJunto = [...nomes, ...numeros]
+console.log(tudoJunto)
