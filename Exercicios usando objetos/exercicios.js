@@ -1,17 +1,34 @@
+
+//1
 const produtos =[
     {
-    nome: "chocolate",
-    preco: 10.00,
-    categoria:"comida",
-    },
-    {
+        nome: "chocolate", 
+        preco: 10.00, 
+        categoria:"comida",
+        
         nome: "coca cola",
         preco: 12.00,
         categoria:"bebidas",
+        informarProdutos: function(){
+        return this.nome[0], this.nome[1]
+        } 
     }
 ]
-function informarProduto(){
-    let informarProdutos = produtos.map(elemento => elemento.categoria)
-    return produtos.nome
+
+// produtos.informarProdutos();
+
+
+//2
+const livro = {
+    titulo: "Romeu e julieta",
+    autor: "William Shakespare",
+
+    // titulo: "Dom quixote",
+    // autor: "Miguel de Cervantes",
+
 }
-console.log(produtos.nome)
+function emprestar(livro, status){
+    livro.titulo = status
+}
+emprestar(livro, )
+console.log(livro.status)
