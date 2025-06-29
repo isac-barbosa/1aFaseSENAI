@@ -76,7 +76,8 @@ let nomesMinusculo = nomes.map(palavra => {
 console.log(nomesMinusculo)
 
 //4
-
+let  algumComB = nomes.some(nome => nome.startsWith("B")); //startsWith para saber a primeira letra
+console.log(algumComB); 
 
 //5
 let Daniel = nomes
@@ -131,9 +132,23 @@ console.log(numCresc)
 
 //8
 function buscarCategoria(Roupas){
-    return produtos.filter(produtos => produtos.categoria === Roupas)
+    return produtos.filter(produto => produto.categoria === "Roupas")
 }
-console.log(buscarCategoria)
+let resultado = buscarCategoria("Roupas")
+console.log(resultado)
+
+
+//9
+let nomesPreco = [
+    {
+        nome: "Camiseta", preco: 29.9,
+        nome: "Notebook", preco: 2500,
+        nome: "Mouse", preco: 59.9,
+        nome: "Meias", preco: 9.9,
+        nome: "Teclado", preco: 120,
+    }
+]
+
 
 //10
 let valores = (produtos.map( elementos => elementos.preco))
@@ -143,7 +158,47 @@ console.log(maiorque5)
 
 
 //Bonus
+//1
+
+let quadradoPares = numeros.filter((numero) => numero % 2 === 0).map(num => num * num)
+console.log(quadradoPares)
+
+
+//2
+let nomeMaisLongo = nomes.reduce((maior, atual) => {
+  return atual.length > maior.length ? atual : maior;
+});
+
+console.log(nomeMaisLongo); 
+
+
+//3
+let terminaComVogal = nome => {
+  let ultimaLetra = nome.slice(-1).toLowerCase();
+  return ["a", "e", "i", "o", "u"].includes(ultimaLetra);
+};
+
+let todosTerminamComVogal = nomes.every(terminaComVogal);
+
+console.log(todosTerminamComVogal); 
+
 
 //4
 let tudoJunto = [...nomes, ...numeros]
 console.log(tudoJunto)
+
+//5
+let menorde100 = produtos.filter( produtos => produtos.preco < 100)
+let roupas = menorde100.filter(produtos => produtos.categoria == "Roupas")
+console.log(roupas)
+
+
+//6
+function mediaEletronicos(produtos){
+    let Eletronicos = produtos.filter(produto => produto.categoria === "Eletrônicos");
+    let Soma = Eletronicos[0].preco + Eletronicos[1].preco + Eletronicos[2].preco 
+    calculo = Soma / 3
+    return calculo
+}
+let media = mediaEletronicos(produtos)
+console.log(media)
