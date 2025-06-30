@@ -22,13 +22,45 @@ const produtos =[
 const livro = {
     titulo: "Romeu e julieta",
     autor: "William Shakespare",
+    emprestado: false,
 
     // titulo: "Dom quixote",
+
     // autor: "Miguel de Cervantes",
 
+
+    emprestar: function(){
+        if(this.emprestado){
+            console.log("O livro ja foi emprestado")
+        }
+        else{
+            this.emprestado = false
+            console.log("Livro emprestado com sucesso")
+        }
+    },
+    devolver: function(){
+        if(!this.emprestado){
+            console.log("O livro ja esta disponivel")
+        }else{
+            this.emprestado = false
+            console.log("Livro devolvido com sucesso")
+        }
+    }
 }
-function emprestar(livro, status){
-    livro.titulo = status
+livro.emprestar()
+livro.emprestar()
+livro.devolver()
+livro.devolver()
+    
+
+const conversor ={
+
+    celsiusParaFarenheit: function(celsius){ 
+        return (celsius * 9/5) + 32
+    },
+    farenheitParaClesius: function(farenheit){
+        return(farenheit - 32) * 5/9
+    }
 }
-emprestar(livro, )
-console.log(livro.status)
+console.log(conversor.celsiusParaFarenheit())
+console.log(conversor.farenheitParaClesius())
