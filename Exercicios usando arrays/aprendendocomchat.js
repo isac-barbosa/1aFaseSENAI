@@ -101,3 +101,53 @@ for(let i = 0; i < turma.length; i++){
         console.log(alunoAtual.aluno, ": APROVADO")
     }
 }
+
+
+
+
+const numeros = [4, 8, 15, 16, 23, 42];
+
+let maiorque10 = numeros.filter(n => n > 10)
+console.log(maiorque10)
+
+
+let soma = numeros.reduce((acumulado,valoratual) => acumulado + valoratual, 0)
+console.log(soma)
+let multiplicado = numeros.map(n => n* 2)
+console.log(multiplicado)
+
+
+const filme = {
+  titulo: "Vingadores: Ultimato",
+  ano: 2019,
+  diretor: "Anthony e Joe Russo",
+  duracao: 181,
+  genero: "Ação"
+};
+
+console.log("O filme Vingadores: Ultimato, do gênero Ação, foi lançado em 2019.")
+filme["nota"] = 9.5;
+console.log(filme)
+filme["duracao"] = 182
+console.log(filme)
+
+
+
+const alunos2 = [
+  { nome: "Lucas", notas: [7, 8, 6.5] },
+  { nome: "Julia", notas: [9, 10, 9.5] },
+  { nome: "Mateus", notas: [4, 5.5, 6] }
+];
+
+for(let i = 0; i<alunos2.length; i++){
+    let alunoatual = alunos2[i]
+        let calculo = alunoatual.notas[0] + alunoatual.notas[1] + alunoatual.notas[2]
+        console.log(calculo)
+        let soma = calculo / 3
+        if(soma < 7){
+            console.log( alunoatual , "media:",soma, "Reprovado")
+        }
+        else{
+            console.log(alunoatual, "media:",soma, "Aprovado")
+        }
+    }
