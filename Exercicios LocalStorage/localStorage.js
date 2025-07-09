@@ -69,3 +69,10 @@ tarefa4.addEventListener("change",function(){
     localStorage.setItem("tarefa4", tarefa4.checked.toString())
 
 }) 
+
+
+//4
+let nomeUsuario = {nome: ""}
+if(localStorage.setItem("nomeUsuario", JSON.stringfy(nomeUsuario))){
+
+}
